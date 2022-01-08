@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+html {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+body {
+  padding: 10px 60px 20px 60px;
+}
+
+nav{
+  display: flex;
+  align-items:center;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+main {
+  text-align: center;
+
+}
+
+footer {
+  margin-top: 5%;
+  margin-bottom: 5px;
+  font-size: 0.8rem;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+} 
+
+.card {
+  border: 1px solid grey;
+  border-radius: 6px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.card__img{
+  height: 300px;
+  width: 300px;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position:center;
+  border-bottom:  1px solid grey;
+}
+.card__data{
+  padding-left: 5px;
+  padding-bottom: 5px;
+}
+
+.card__data-title{
+  padding-top: 5px;
+  padding-bottom: 3px;
+  font-size: 0.9rem;
+  color: gray;
+}
+
+.card__data-date{
+  font-size: 0.8rem;
+  padding-bottom: 3px;
+  color: gray;
+}
+.card__data-like{
+  display: flex;
+  align-items: center;
+}
+
+.btn-like{
+  background-color: lightgrey; 
+  color: white; 
+  font-size: 30px;
+  padding: 3px;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: 1s;
+}
+
+.btn-like:hover {
+  background-color: gray;
+}
+
+.spinner{
+  color: gray; 
+  font-size: 60px;
+}
+
+.num-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid lightgrey;
+  background-color: lightgrey;
+  margin-left: 5px;
+  color:white;
+}
+
+.num-btn:hover {
+  border: 1px solid gray;
+  background-color: gray;
+  
+}
