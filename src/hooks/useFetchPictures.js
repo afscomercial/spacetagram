@@ -42,7 +42,7 @@ export const useFetchPictures = () => {
       if (pic.title === title) {
         return {
           ...pic,
-          likes: ++pic.likes,
+          likes: (pic.likes<1) ? ++pic.likes : --pic.likes,
         };
       } else {
         return pic;
