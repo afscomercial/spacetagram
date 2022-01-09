@@ -13,7 +13,6 @@ export const useFetchPictures = () => {
   useEffect(() => {
     const localPictures = JSON.parse(localStorage.getItem('pictures'));
     if (!localPictures || localPictures.length < 1) {
-      console.log('fetch data')
       getPictures().then((imgs) => {
         setPicturesState({
           data: imgs,
@@ -32,7 +31,6 @@ export const useFetchPictures = () => {
 
   useEffect(() => {
     if(loadLocalStorage){
-      console.log('load')
       localStorage.setItem('pictures', JSON.stringify(data));
     }
   }, [data, loadLocalStorage]);
